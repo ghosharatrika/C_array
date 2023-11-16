@@ -1,5 +1,6 @@
 //Using calloc instead of malloc
-
+#include<stdlib.h>
+#include<stdio.h>
 #include "statistics.h"
 
 int main() {
