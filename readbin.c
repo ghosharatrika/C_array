@@ -11,7 +11,7 @@ int main() {
     }
 
     // Read the result from the binary file
-    float result[2];
+    double result[2];
     fread(result, sizeof(float), 2, file);
 
     // Close the file
