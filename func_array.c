@@ -4,8 +4,8 @@
 #include "statistics.h"
 
 // Function to calculate the mean and variance of array of 1, 4, 9, 16....., 100^2
-float *calculate_mean_variance(float *array, int length) {
-    float *result = (float *)malloc(2 * sizeof(float));
+double *calculate_mean_variance(double *array, int length) {
+    double *result = (double *)malloc(2 * sizeof(double));
     float mean = 0.0, variance = 0.0;
 
     // Calculate mean
