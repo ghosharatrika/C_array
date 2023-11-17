@@ -7,14 +7,14 @@
 
 int main() {
     
-    float *array = (float *)calloc(100 ,sizeof(float)); // Using calloc, create an array of hundred float elements
+    double *array = (double *)calloc(100 ,sizeof(double)); // Using calloc, create an array of hundred float elements
 
     for (int i = 0; i < 100; ++i) {
         printf("Assigning value to array[%d]\n", i);
         array[i] = (i+1)*(i+1); // Assign values to the elements of the array
     }
    
-    float *result = calculate_mean_variance(array, 100); // Calculate mean and variance using the function
+    double *result = calculate_mean_variance(array, 100); // Calculate mean and variance using the function
 
 
      // Open a binary file for writing
@@ -25,7 +25,7 @@ int main() {
     }
 
     // Write mean and variance to the binary file
-    fwrite(result, sizeof(float), 2, file);
+    fwrite(result, sizeof(double), 2, file);
 
     // Close the file
     fclose(file);
