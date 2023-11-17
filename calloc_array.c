@@ -8,7 +8,7 @@ int main() {
     double *array = (double *)calloc(100 ,sizeof(double)); // Using calloc, create an array of hundred float elements
 
     for (int i = 0; i < 100; ++i) {
-        printf("Assigning value to array[%d]\n", i);
+        printf("Before Assignment array[%d] =%f \n", i,array[i]);
         array[i] = (i+1)*(i+1); // Assign values to the elements of the array
     }
    
